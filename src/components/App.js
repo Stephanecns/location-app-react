@@ -3,15 +3,14 @@ import logo from '../assets/logo.svg';
 import '../styles/App.scss';
 import Header from './header';
 import Footer from './footer';
+import Router from './routeur'; // Importe ton composant Router ici
 
 
 function App() {
   return (
     <>
       <Header />
-      <div className="App">
- 
-      </div>
+      <Router />  
       <Footer />
     </>
   );

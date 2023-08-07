@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+
+    &__logo {
+        font-size: 1.5rem;
+    }
+
+    &__actions {
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            gap: 4.5rem; 
+            font-size: 1.5rem;
+
+            li {
+                margin: 0;
+
+                a {
+                    color: rgba(255, 0, 0, 0.7); 
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}

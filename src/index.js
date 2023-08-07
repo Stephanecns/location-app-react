@@ -1,9 +1,10 @@
+//Permet d’initialiser notre app React 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-import Router from '../src/routeur'; // Importez le composant Router que vous venez de créer
+import App from './components/App';
+import Router from './components/routeur'; // Importez le composant Router que vous venez de créer
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

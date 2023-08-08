@@ -34,3 +34,51 @@
         
     }
 }
+
+
+
+.collapse {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 1003px;
+    height: -124px;
+    margin: 38px auto; /* Centrer horizontalement avec une marge en haut */
+
+    &__title {
+            background: rgba(255, 96, 96, 1);
+            color: #FFF; /* Couleur du texte */
+            font-family: Montserrat; /* Police de caractères */
+            font-size: 24px; /* Taille de la police */
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%; /* Hauteur de ligne */
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            font-weight: bold;
+    }
+
+    &__icon {
+        display: inline-block;
+        transition: transform 0.6s ease-in-out;
+
+        &.open {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__content {
+        background: rgba(246, 246, 246, 1);
+        color: rgba(255, 96, 96, 1);
+        padding: 15px;
+        max-height: 200px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: max-height 0.6s ease-in-out; 
+    }
+}

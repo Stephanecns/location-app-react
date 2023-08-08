@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
-import Router from './components/routeur'; // Importez le composant Router que vous venez de créer
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

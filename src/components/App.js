@@ -1,8 +1,9 @@
-//App.js est notre premier composant React
+
 import '../styles/App.scss';
+import '../styles/global.scss'
 import Header from './header';
 import Footer from './footer';
-import Router from './routeur'; // Importe ton composant Router ici
+import Router from './routeur'; 
 
 
 function App() {

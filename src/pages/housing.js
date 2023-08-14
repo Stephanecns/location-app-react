@@ -1,11 +1,13 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import Slideshow from "../components/slideshow";
 
 function Housing() {
-    const {id} = useParams();
-    return (
-        <div>
-            <h1>Housing 🧮 {id} </h1>
-        </div>
-    )
+  const { id } = useParams();
+  return (
+    <div>
+      <h1> {id} </h1>
+      <Slideshow />
+    </div>
+  );
 }
-export default Housing
+export default Housing;

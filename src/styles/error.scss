@@ -1,4 +1,3 @@
-
 .not-found-container {
     text-align: center;
     color: #FF6060;
@@ -14,7 +13,7 @@
     font-size: 288px;
     font-style: normal;
     font-weight: 700;
-    line-height: 142.6%; // 410.688px
+    line-height: 142.6%;
     margin-bottom: 139px;
     margin-top: 139px;
 }
@@ -22,15 +21,15 @@
 .not-found-text {
     font-size: 36px;
     font-weight: 500;
-    line-height: 142.6%; // 51.336px
-    margin-bottom: 139px; // espace entre le premier et le deuxième paragraphe
+    line-height: 142.6%;
+    margin-bottom: 139px;
 }
 
 .not-found-link {
     font-size: 18px;
     font-weight: 500;
-    line-height: 142.6%; // 25.668px
+    line-height: 142.6%;
     text-decoration: underline;
-    cursor: pointer; // pour indiquer que c'est cliquable
+    cursor: pointer;
     margin-bottom: 139px;
 }

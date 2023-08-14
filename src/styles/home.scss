@@ -4,8 +4,8 @@
     border-radius: 25px;
     background: #000;
     mix-blend-mode: darken;
-    position: relative;  
-    overflow: hidden;    
+    position: relative;
+    overflow: hidden;
     margin: 40px auto 0 auto;
 
 
@@ -19,18 +19,18 @@
     }
 
     .overlay-text {
-        position: absolute; 
-        top: 50%;  
+        position: absolute;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); 
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 38px; 
-        font-style: normal; 
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 38px;
+        font-style: normal;
         font-weight: 500;
-        line-height: 142.6%; 
+        line-height: 142.6%;
         text-align: center;
         z-index: 1;
         color: white;
-        
+
     }
 }

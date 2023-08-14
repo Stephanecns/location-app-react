@@ -1,5 +1,3 @@
-
-
 .banner {
   width: 1240px;
   height: 829px;
@@ -10,10 +8,10 @@
   justify-content: space-between;
   align-content: flex-start;
   padding: 56px 50px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   margin-top: 43px;
-  margin-left:110px;
-  
+
+
 
   .card {
     width: 340px;
@@ -36,12 +34,11 @@
       left: 0;
     }
 
-      h1 {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.426; 
-        z-index: 2;
-      }
+    h1 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.426;
+      z-index: 2;
     }
   }
-
+}

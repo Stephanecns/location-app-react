@@ -1,0 +1,57 @@
+.carrousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    position: relative; // Pour positionner les éléments fils en absolu
+    overflow: hidden; // Pour empêcher les débordements, surtout si vos images ne correspondent pas exactement
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    .carrousel-pictures {
+        width: 100%; // Pour occuper tout l'espace du carrousel
+        height: 100%; // Pour occuper tout l'espace du carrousel
+        object-fit: cover; // Pour s'assurer que l'image couvre tout l'espace sans être déformée
+    }
+
+    .numbers-pictures {
+        position: absolute; // Pour le positionner par rapport au carrousel
+        bottom: 10px; // Un peu d'espace par rapport au bas
+        left: 50%; // Centrer horizontalement
+        transform: translateX(-50%); // Centrer horizontalement
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        display: flex;
+        width: 24px;
+        height: 32.402px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .svg-inline--fa {
+        font-size: 46px; // Augmentation de la taille des icônes
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &[data-icon="angle-left"] {
+            left: 10px;
+        }
+
+        &[data-icon="angle-right"] {
+            right: 10px;
+        }
+    }
+}
+  

@@ -1,25 +1,7 @@
 import "../styles/about.scss";
-import React, { useState } from "react";
+import React from "react";
 import imageInRectangle from "../assets/Image source 2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
-function Collapse({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="collapse">
-      <div className="collapse__title" onClick={() => setIsOpen(!isOpen)}>
-        {title}
-        <span className={`collapse__icon ${isOpen ? "open" : ""}`}>
-          <FontAwesomeIcon icon={faChevronUp} />
-        </span>
-      </div>
-      {isOpen && <div className="collapse__content">{children}</div>}
-    </div>
-  );
-}
-
+import Collapse from '../components/collapse'
 function About() {
   return (
     <div className="about">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/slideshow.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import HousingDetail from '../components/detailhousing';
 
 const Slideshow = (props) =>  {
   const { pictures } = props  
@@ -40,6 +41,7 @@ const Slideshow = (props) =>  {
         <FontAwesomeIcon onClick={handlePreviousClick} icon={faAngleLeft} />
         <FontAwesomeIcon onClick={handleNextClick} icon={faAngleRight} />
       </div>
+      <HousingDetail />
     </div>
 
     

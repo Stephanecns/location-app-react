@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { annonces } from "../annonces_immobilieres";
 import { Collapse } from "../components/collapse"; // Assurez-vous que le chemin est correct
 import "../styles/detailhousing.scss";
+import StarRating from "../components/StarRating"; // Ajustez le chemin si nécessaire en fonction de l'emplacement de votre composant
 
 function HousingDetail() {
   const { id } = useParams();
@@ -13,23 +14,19 @@ function HousingDetail() {
 
   const {
     title,
-    host: { name: hostName, picture : hostPicture},
+    host: { name: hostName, picture: hostPicture },
     rating,
     tags,
   } = annonce;
 
   return (
     <div className="housing-detail">
-      <h1 className="housing-title">{title}</h1>
-      <h2 className="housing-location">{annonce.location}</h2>
-      <div className="housing-tags">
-        {tags.map((tag) => (
-          <span className="tag" key={tag}>
-            {tag}
-          </span>
-        ))}
-      </div>
-      <div className="housing-host">
+      <div className="wrapper1">
+        <div className="title-location-wrapper">
+            <h1 className="housing-title">{title}</h1>
+            <h2 className="housing-location">{annonce.location}</h2>
+        </div>
+        <div className="housing-host">
         <h2 className="housing-host-name">{hostName}</h2>
         <img
           className="housing-host-pictures"
@@ -37,7 +34,23 @@ function HousingDetail() {
           alt="Host pic"
         />
       </div>
-      <div className="housing-rate">{rating}</div>
+      </div>
+
+      <div className="wrapper2">
+      <div className="housing-tags">
+        {tags.map((tag) => (
+          <span className="tag" key={tag}>
+            {tag}
+          </span>
+        ))}
+      </div>
+      <div className="housing-rate">
+        {" "}
+        <StarRating rating={rating} />
+      </div>
+      </div>
+
+      
       <div className="specific-collapse-container">
         <Collapse title="Description">{annonce.description}</Collapse>
         <Collapse title="Équipements">

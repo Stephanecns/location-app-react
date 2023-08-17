@@ -1,0 +1,13 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px; // Ajustez la distance entre les étoiles si nécessaire
+  
+    .fa-star {
+      color: rgba(227, 227, 227, 1); // Couleur des étoiles vides
+  
+      &.active {
+        color: rgba(255, 96, 96, 1); // Couleur des étoiles pleines
+      }
+    }
+  }

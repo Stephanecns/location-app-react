@@ -1,5 +1,4 @@
 .collapse {
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
     width: 1003px;
@@ -20,6 +19,8 @@
         align-items: center;
         padding: 15px;
         font-weight: bold;
+        z-index: 2;  
+        position: relative;  
     }
 
     &__icon {
@@ -40,16 +41,15 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        transform: translateY(100%);
+        transform: translateY(-100%);
         animation: slide-in 0.5s ease-in-out forwards;
-        /* Durée de l'animation */
-
+        border-radius: 5px;
 
     }
 
     @keyframes slide-in {
         from {
-            transform: translateY(100%);
+            transform: translateY(-50%);
         }
 
         to {

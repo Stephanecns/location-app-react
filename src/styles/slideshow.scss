@@ -23,7 +23,7 @@
         color: #FFF;
         text-align: center;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%;
@@ -40,6 +40,7 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+        font-size: 8rem;
 
         &[data-icon="angle-left"] {
             left: 10px;

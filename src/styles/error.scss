@@ -16,6 +16,10 @@
     line-height: 142.6%;
     margin-bottom: 139px;
     margin-top: 139px;
+
+    @media (max-width: 576px) {
+        font-size: 198px;
+    }
 }
 
 .not-found-text {

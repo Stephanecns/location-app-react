@@ -19,8 +19,8 @@
         align-items: center;
         padding: 15px;
         font-weight: bold;
-        z-index: 2;  
-        position: relative;  
+        z-index: 2;
+        position: relative;
     }
 
     &__icon {
@@ -46,6 +46,10 @@
         border-radius: 5px;
         font-size: 2rem;
 
+        @media (max-width: 576px) {
+            font-size: 3rem;
+            ;
+        }
     }
 
     @keyframes slide-in {
@@ -56,5 +60,9 @@
         to {
             transform: translateY(0);
         }
+    }
+
+    @media (max-width: 576px) {
+        width: 335px;
     }
 }

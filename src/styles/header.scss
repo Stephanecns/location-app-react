@@ -1,13 +1,13 @@
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem 2rem;
-    background-color: white;
 
-    &__logo {
-        font-size: 1.5rem;
+    &__logo img {
+        @media (max-width: 576px) {
+            width: 145px;
+        }
     }
 
     &__actions {
@@ -28,5 +28,17 @@
                 }
             }
         }
+
+        @media (max-width: 576px) {
+            text-transform: uppercase;
+        }
+    }
+
+    @media (max-width: 576px) {
+        display: flex;
+        justify-content: center;
+        gap: 43px;
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
 }

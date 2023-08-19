@@ -27,10 +27,21 @@
         font-size: 38px;
         font-style: normal;
         font-weight: 500;
-        line-height: 142.6%;
         text-align: center;
         z-index: 1;
         color: white;
 
+        @media (max-width: 576px) {
+            text-align: left;
+            font-size: 6rem;
+            left: 39%;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        margin: 27px auto 0 auto;
+        max-width: 335px;
+        height: 111px;
     }
 }

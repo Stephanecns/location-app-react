@@ -5,7 +5,10 @@
         flex-direction: column;
         gap: 0.5rem;
 
+        @media (max-width: 576px) {
+            margin: 15px auto 0 auto;
 
+        }
     }
 
     .wrapper1 {
@@ -18,6 +21,12 @@
             font-size: 36px;
             font-weight: 500;
             line-height: 142.6%;
+
+            @media (max-width: 576px) {
+                width: 335px;
+                font-size: 18px;
+            }
+
         }
 
         .housing-location {
@@ -41,60 +50,121 @@
                 font-weight: 500;
                 line-height: 142.6%;
                 width: 90px;
+
+                @media (max-width: 576px) {
+
+                    font-size: 15px;
+                    text-align: right;
+                }
             }
 
             .housing-host-pictures {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%; // Si vous voulez que l'image soit ronde
+
+                @media (max-width: 576px) {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            @media (max-width: 576px) {
+
+                margin: 27px auto 0 auto;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                position: relative;
+                left: 196px;
+                top: 64px;
             }
         }
+
+        @media (max-width: 576px) {
+            display: flex;
+
+            flex-direction: column;
+
+        }
     }
+
     .wrapper2 {
         display: flex;
         justify-content: space-between;
-    .housing-tags {
-        margin-top: 20px;
-        display: flex;
-        gap: 10px; // espace entre chaque tag
 
-        .tag {
+        .housing-tags {
+            margin-top: 20px;
             display: flex;
-            align-items: center; // Centre verticalement le texte à l'intérieur du tag
-            justify-content: center; // Centre horizontalement le texte à l'intérieur du tag
-            width: 115px;
-            height: 25px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background: #FF6060;
-            color: white; // Si le texte du tag doit être blanc
-            font-size: 1.5rem; // Ajustez selon vos préférences
-            font-weight: 500; // Ajustez selon vos préférences
+            gap: 10px; // espace entre chaque tag
+
+            .tag {
+                display: flex;
+                align-items: center; // Centre verticalement le texte à l'intérieur du tag
+                justify-content: center; // Centre horizontalement le texte à l'intérieur du tag
+                width: 115px;
+                height: 25px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #FF6060;
+                color: white; // Si le texte du tag doit être blanc
+                font-size: 1.5rem; // Ajustez selon vos préférences
+                font-weight: 500; // Ajustez selon vos préférences
+
+                @media (max-width: 576px) {
+                    font-size: 10px;
+                    position: relative;
+                    bottom: 51px;
+                    width: 83px;
+                    height: 18px;
+                }
+            }
+
+        }
+
+        .housing-rate {
+            width: 196px;
+            height: 36px;
+            margin-top: 21px; // Pour l'espace entre host et rate
+            // Ajoutez ici le style pour les étoiles si nécessaire
+            display: flex;
+            justify-content: flex-end;
+
+            @media (max-width: 576px) {
+                justify-content: flex-start;
+
+            }
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+
         }
     }
-
-    .housing-rate {
-        width: 196px;
-        height: 36px;
-        margin-top: 21px; // Pour l'espace entre host et rate
-        // Ajoutez ici le style pour les étoiles si nécessaire
-        display: flex;
-        justify-content: flex-end;
-    }
-}
 
     .specific-collapse-container {
         display: flex;
         justify-content: space-between;
-        gap: 76px;
+
 
         .collapse {
             width: 582px;
             border-radius: 10px 10px 5px 5px;
+
+            @media (max-width: 576px) {
+                width: 335px;
+                margin: 27px auto 0 auto;
+
+            }
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 
-    @media screen and (max-width: 768px) {
-        // Ici, ajoutez les styles pour les écrans plus petits si nécessaire
-    }
+
 }
